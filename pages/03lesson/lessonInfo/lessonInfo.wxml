@@ -1,0 +1,62 @@
+<!--pages/03lesson/lessonInfo/lessonInfo.wxml-->
+<video id="video" src="{{currentUrl}}" autoplay="{{true}}" loop="{{true}}" controls="{{true}}" class="lesson-video"/>
+
+<!-- 课程信息 -->
+<view class="lessonInfo">
+    <view class="left">
+        <text class="title">{{name}}班视频演示</text>
+        <view class="subTitle">
+            <text decode="{{true}}">主讲：{{teacher}}&nbsp;&nbsp;|</text>
+            <text decode="{{true}}">课时：{{movieList.length}}&nbsp;&nbsp;|</text>
+            <text>{{studyNumber}}人已学习</text>
+        </view>
+    </view>
+        
+    <view class="right">
+        <button bindtap="buyLesson">关注</button>
+    </view>
+</view>
+
+<!-- 底部tab，直接复制weui里面的 -->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'myui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title myui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider myui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <!-- 循环movieList数组里面的数据信息 -->
+                <view class="weui-tab__content one" hidden="{{activeIndex != 0}}">
+                    <block wx:for="{{movieList}}">
+                        <!--currentUrl当前随机播放的视频地址， item.url当前循环的movieList视频的url地址  -->
+                        <!-- 点击切换视频01：视频区域绑定tap，把视频的地址绑定到view的自定义属性中-->
+                        <view bindtap="changeVideo" data-url="{{item.url}}" class="{{currentUrl==item.url?'highLight':''}}">
+                            <text>0{{index+1}}.{{name+item.subTitle}}</text>
+                            <text>{{item.time}}</text>
+                        </view>
+                    </block>
+                </view>
+                <view class="weui-tab__content two" hidden="{{activeIndex != 1}}">{{desc}}</view>
+                <view class="weui-tab__content three" hidden="{{activeIndex != 2}}">
+                    <!-- 循环评论信息commentList数组 -->
+                    <block wx:for="{{commentList}}">
+                        <view>
+                            <view class="left">
+                                <image src="{{item.icon}}" />
+                            </view>
+                            <view class="right">
+                                <text class="title">{{item.name}}</text>
+                                <text class="subTitle">{{item.info}}</text>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

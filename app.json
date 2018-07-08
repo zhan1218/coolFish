@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/01.login/01.login",
+    "pages/05self/bindPhone/bindPhone",
+    "pages/04study/04study",
+    
+    "pages/02index/02index",
+    "pages/03lesson/03lesson",
+    "pages/03lesson/lessonInfo/lessonInfo",
+    "pages/03lesson/buyLesson/buyLesson",
+    
+    
+    "pages/05self/05self"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF547C",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+
+    "tabBar": {
+      "selectedColor": "#FF547C",
+      "list": [
+        {
+          "pagePath": "pages/02index/02index",
+          "text": "首页",
+          "iconPath": "/img/icon-首页@2x.png",
+          "selectedIconPath": "/img/icon-首页-选中@2x.png"
+        },
+        {
+          "pagePath": "pages/03lesson/03lesson",
+          "text": "课程",
+          "iconPath": "/img/icon-课程@2x.png",
+          "selectedIconPath": "/img/icon-课程-选中@2x.png"
+        },
+        {
+          "pagePath": "pages/04study/04study",
+          "text": "学习",
+          "iconPath": "/img/icon-学习@2x.png",
+          "selectedIconPath": "/img/icon-学习-选中@2x.png"
+        },
+        {
+          "pagePath": "pages/05self/05self",
+          "text": "我的",
+          "iconPath": "/img/icon-我的@2x.png",
+          "selectedIconPath": "/img/icon-我的-选中@2x.png"
+        }
+      ]
+    }
+}

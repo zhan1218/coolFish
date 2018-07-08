@@ -1,0 +1,11 @@
+<!--pages/04study/04study.wxml-->
+<!-- pages/03lesson/03lesson.wxml -->
+<block wx:for="{{studyData}}">
+    <view class="item">
+        <image src="{{item.path}}" />
+        <view class="title-box">
+            <text class="title">{{item.title}}</text>
+            <text class="subTitle">{{item.subTitle}}</text>
+        </view>
+    </view>
+</block>

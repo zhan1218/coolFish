@@ -1,0 +1,19 @@
+<!--pages/03lesson/buyLesson/buyLesson.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}" next-margin="{{nextMargin}}">
+  <block wx:for="{{imgs}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--会员福利  -->
+<view class="vip">
+  <text class="title">会员福利</text>
+  <view class="subtitle-box">
+    <text>1.享受所有VIP课程的观看权限</text>
+    <text>2.专属标志显示</text>
+    <text>3.专属课程推送</text>
+  </view>
+</view>
+<!--底部  -->
+<button>确定选购</button>

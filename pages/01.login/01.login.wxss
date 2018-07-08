@@ -1,0 +1,68 @@
+/* pages/01.login/01.login.wxss */
+page{
+    background-color: #F5F7FB;
+    height:1334rpx;
+}
+.top{
+    height:299rpx;
+    overflow: hidden;
+}
+.top text{
+    display:block;
+    text-align: center;
+}
+.top .title{
+    font-size: 34rpx;
+    margin:103rpx 0 23rpx 0;
+}
+.top .subtitle{
+    font-size: 26rpx;
+    color:#959595;
+}
+
+/* 输入框区域 */
+.input{
+    height:478rpx;
+    background-color: #fff;
+    font-size: 28rpx;
+    padding:71rpx 0 69rpx 73rpx;
+    display: flex;
+    flex-direction: column;
+    /* justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式 */
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.input .cell{
+    display:flex;
+    /* align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。 */
+    align-items: center;
+   
+}
+.input .cell>label{
+    width:92rpx;
+    text-align: right;
+    margin-right:46rpx;
+}
+.input .cell>input{
+    flex:1;
+    border-bottom:1px solid #eee;
+}
+.input .cell>radio-group>radio{
+    transform: scale(0.5);
+}
+/* nth-type-of只会找同一类的标签,如:label */
+.input .cell>radio-group>label:nth-of-type(1){
+    margin-right:100rpx;
+}
+.input .cell>picker{
+    border-bottom: 1px solid #eee;
+}
+button{
+    margin-top:168rpx;
+    color:white;
+    width:510rpx;
+    height:96rpx;
+    background:rgba(255,84,124,1);
+    border-radius:48rpx;
+    box-shadow:0px 21rpx 46rpx rgba(255,84,124,0.47);
+}

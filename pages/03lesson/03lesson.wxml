@@ -1,0 +1,17 @@
+<!--pages/03lesson/03lesson.wxml-->
+<block wx:for="{{lessonData}}">
+    <view class="item">
+        <view class="left">
+            <image src="{{item.path}}" />
+            <view class="title-box">
+                <text class="title">{{item.title}}</text>
+                <text class="subTitle">{{item.subTitle}}</text>
+            </view>
+        </view>
+        <view class="right">
+            <!-- 点击课表去详情页，自定义一个name属性 -->
+            <button data-name="{{item.name}}" bindtap="lessonInfo" wx:if="{{!item.isFull}}" class="no-full">了解课程</button>
+            <button wx:else class="full">人数已满</button>
+        </view>
+    </view>
+</block>

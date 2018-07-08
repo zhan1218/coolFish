@@ -1,0 +1,46 @@
+/* pages/03lesson/buyLesson/buyLesson.wxss */
+
+swiper{
+    width:750rpx;
+    height:447rpx;
+    background:rgba(231,233,238,1);
+}
+swiper-item>image{
+    width:640rpx;
+    height:360rpx;
+    margin:39rpx auto 19rpx;
+    border-radius:10rpx;
+    display:block;
+}
+.vip{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  color:#333;
+  padding-left: 46rpx;
+
+}
+.vip .title{
+  font-size:32rpx;
+  display:block;
+  margin: 48rpx 0;
+}
+.vip .subtitle-box{
+  height:119rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  font-size:24rpx;
+  margin-top:5rpx;
+}
+
+button{
+    margin-top:315rpx;
+    color:white;
+    width:510rpx;
+    height:96rpx;
+    background:rgba(255,84,124,1);
+    border-radius:48rpx;
+    box-shadow:0px 21rpx 46rpx rgba(255,84,124,0.47);
+}
+

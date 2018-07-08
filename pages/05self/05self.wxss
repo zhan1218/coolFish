@@ -1,0 +1,46 @@
+/* pages/05self/05self.wxss */
+page{
+    background-color: #F5F7FB;
+}
+.top{
+    height:387rpx;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color: #fff;
+}
+.top image{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius:50%;
+    border:2px solid lightblue;
+    margin-top:74rpx;
+    display: block;
+}
+.top text{
+    font-size:28rpx;
+    color:#333;
+    margin-top:48rpx;
+    display: block;
+}
+.vipBox{
+    height:100rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30rpx;
+    background-color: #fff;
+}
+.vipBox .title{
+    font-size: 28rpx;
+    color:#333;
+}
+.vipBox .subtitle{
+    font-size: 24rpx;
+    color:#A2A2A2;
+}
+.userOpt{
+    margin-top: 30rpx;
+    background-color: #fff;
+}

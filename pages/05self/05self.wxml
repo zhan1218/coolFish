@@ -1,0 +1,30 @@
+<!--pages/05self/05self.wxml-->
+<view class="top">
+    <image src="{{userInfo.sex=='girl'?'/img/girl.jpg':'/img/boy.png'}}" />
+    <text>{{userInfo.name}}</text>
+</view>
+<view class="vipBox">
+    <text class="title">VIP会员到期时间</text>
+    <text class="subtitle">2019-6-6 12:00</text>
+</view>
+<!-- weui-list-带说明，跳转的列表项 -->
+<view class="userOpt">
+    <view class="weui-cells weui-cells_after-title">
+        <navigator url="./bindPhone/bindPhone" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">绑定手机号</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">我的关注</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"> </view>
+        </navigator>
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">使用须知</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">我的客服</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+    </view>
+</view>

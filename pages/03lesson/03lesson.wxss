@@ -1,0 +1,56 @@
+/* pages/03lesson/03lesson.wxss */
+page{
+    background-color: #F5F7FB;
+    padding-top: 24rpx;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:702rpx;
+    height:213rpx;
+    background-color: #fff;
+    border-radius:10rpx;
+    box-shadow:1px 0px 46px rgba(234,234,234,0.47);
+    margin:0px auto 28rpx;
+}
+.item .left{
+    display: flex;
+    align-items: center;
+}
+.item .left image{
+    width: 151rpx;
+    height: 151rpx;
+}
+.item .left .title-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60rpx;
+    margin-left: 45rpx;
+}
+.item .left .title-box .title{
+    font-size: 32rpx;
+    color:#333;
+}
+.item .left .title-box .subTitle{
+    font-size: 22rpx;
+    color:#A2A2A2;
+}
+.item .right button{
+    width:154rpx;
+    height:50rpx;
+    border-radius:6rpx;
+    font-size:21rpx;
+    color:#fff;
+   
+  }
+    
+
+.item .right .no-full{
+    background:#FF547C;
+}
+.item .right .full{
+    background:#CACACA
+
+}

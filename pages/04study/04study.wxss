@@ -1,0 +1,36 @@
+
+page{
+    background-color: #F4F4F4;
+    padding-top: 24rpx;
+}
+.item {
+    margin:0 25rpx;
+    height:237rpx;
+    width:702rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  
+}
+ image{
+    width: 270rpx;
+    height: 200rpx;
+    margin-right:33rpx;
+    border-radius:10rpx;
+}
+ .title-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:323rpx;
+    height:187rpx;
+}
+ .title-box .title{
+    font-size: 34rpx;
+    color:#333;
+}
+ .title-box .subTitle{
+    font-size: 24rpx;
+    color:#53B000;
+}
